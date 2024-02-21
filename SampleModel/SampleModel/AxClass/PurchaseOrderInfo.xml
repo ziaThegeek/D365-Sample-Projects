@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxClass xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+	<Name>PurchaseOrderInfo</Name>
+	<SourceCode>
+		<Declaration><![CDATA[
+public class PurchaseOrderInfo
+{
+    
+ 
+       
+}
+]]></Declaration>
+		<Methods>
+			<Method>
+				<Name>getPurchaseOrderData</Name>
+				<Source><![CDATA[
+    public PurchOrderResponse getPurchaseOrderData(PurchaseOrderRequest purchaseOrder)
+    {
+        PurchOrderResponse response;
+        PurchTable purchTable;
+        ;
+        changecompany(purchaseOrder.parmDataAreaId())
+        {
+            purchTable = PurchTable::find(purchaseOrder.parmPurchId());
+            response = new PurchOrderResponse();
+            response.parmVendAccount(purchTable.OrderAccount);
+            response.parmVendName(purchTable.PurchName);
+            response.parmDlvDate(purchTable.DeliveryDate);
+            response.parmStatus(purchTable.PurchStatus);
+            response.parmPurchaseType(purchTable.PurchaseType);
+        }
+        return response;
+    }
+
+]]></Source>
+			</Method>
+		</Methods>
+	</SourceCode>
+</AxClass>

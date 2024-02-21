@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxService xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+	<Name>SampleService</Name>
+	<Class>PurchaseOrderInfo</Class>
+	<Description>PurchaseOrderInfo</Description>
+	<ExternalName>PurchaseOrderInfo</ExternalName>
+	<Namespace>PurchaseOrderInfo</Namespace>
+	<ServiceOperations>
+		<AxServiceOperation>
+			<Name>PurchaseOrderInfo</Name>
+			<Method>getPurchaseOrderData</Method>
+			<SubscriberAccessLevel>
+				<Read>Allow</Read>
+			</SubscriberAccessLevel>
+		</AxServiceOperation>
+	</ServiceOperations>
+</AxService>

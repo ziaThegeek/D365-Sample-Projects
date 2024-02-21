@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxClass xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+	<Name>PurchOrderResponse</Name>
+	<SourceCode>
+		<Declaration><![CDATA[
+[DataContractAttribute]
+public class PurchOrderResponse
+{
+    VendAccount vendAccount;
+    VendName vendName;
+    DlvDate   dlvDate;
+    PurchStatus status;
+    PurchaseType purchaseType;
+  
+   }
+]]></Declaration>
+		<Methods>
+			<Method>
+				<Name>parmVendAccount</Name>
+				<Source><![CDATA[
+    [DataMemberAttribute('vendAccount')]
+    public VendAccount parmVendAccount(VendAccount _vendAccount = vendAccount)
+    {
+        vendAccount = _vendAccount;
+        return vendAccount;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>parmVendName</Name>
+				<Source><![CDATA[
+    [DataMemberAttribute('vendName')]
+    public VendName parmVendName(VendName _vendName = vendName)
+    {
+        vendName = _vendName;
+        return vendName;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>parmDlvDate</Name>
+				<Source><![CDATA[
+    [DataMemberAttribute('dlvDate')]
+    public DlvDate parmDlvDate(DlvDate   _dlvDate = dlvDate)
+    {
+        dlvDate = _dlvDate;
+        return dlvDate;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>parmStatus</Name>
+				<Source><![CDATA[
+    [DataMemberAttribute('status')]
+    public PurchStatus parmStatus(PurchStatus _status = status)
+    {
+        status = _status;
+        return status;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>parmPurchaseType</Name>
+				<Source><![CDATA[
+    [DataMemberAttribute('purchaseType')]
+    public PurchaseType parmPurchaseType(PurchaseType _purchaseType = purchaseType)
+    {
+        purchaseType = _purchaseType;
+        return purchaseType;
+    }
+
+]]></Source>
+			</Method>
+		</Methods>
+	</SourceCode>
+</AxClass>
